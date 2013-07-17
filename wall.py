@@ -23,4 +23,5 @@ def get_ch(stdscr):
     if curses.ascii.isprint(c):
         return c
 
-curses.wrapper(main)
+if __name__ == '__main__':
+    curses.wrapper(main)

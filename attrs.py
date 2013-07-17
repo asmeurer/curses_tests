@@ -16,4 +16,5 @@ def highlighting(stdscr):
         if c == ord('q'):
             break
 
-curses.wrapper(highlighting)
+if __name__ == '__main__':
+    curses.wrapper(highlighting)

@@ -30,4 +30,5 @@ def get_c(stdscr):
         if c == ord('c'):
             break
 
-curses.wrapper(colors)
+if __name__ == '__main__':
+    curses.wrapper(colors)

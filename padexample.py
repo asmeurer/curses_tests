@@ -14,4 +14,5 @@ def pad_example(stdscr):
     pad.refresh( 0,0, 5,5, 20,75)
     time.sleep(10)
 
-curses.wrapper(pad_example)
+if __name__ == '__main__':
+    curses.wrapper(pad_example)

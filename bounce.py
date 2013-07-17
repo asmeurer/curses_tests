@@ -34,4 +34,5 @@ def get_chr(stdscr):
         exit(0)
     return c
 
-curses.wrapper(bounce)
+if __name__ == '__main__':
+    curses.wrapper(bounce)

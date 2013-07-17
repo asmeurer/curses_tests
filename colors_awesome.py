@@ -10,7 +10,7 @@ def colors(stdscr):
         get_q()
         return
 
-    
+
 
     stdscr.refresh()
 
@@ -20,4 +20,5 @@ def get_q():
         if c == ord('q'):
             break
 
-curses.wrapper(colors)
+if __name__ == '__main__':
+    curses.wrapper(colors)

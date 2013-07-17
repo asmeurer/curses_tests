@@ -56,4 +56,5 @@ def get_fortune():
         raise RuntimeError("fortune did not work. Maybe it isn't installed?")
     return ' '.join(output[0].strip().split('\n'))
 
-curses.wrapper(main)
+if __name__ == '__main__':
+    curses.wrapper(main)
