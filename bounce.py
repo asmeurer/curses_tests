@@ -13,7 +13,7 @@ def bounce(stdscr):
         c = get_chr(stdscr) or c
         if not c:
             continue
-        stdscr.clear()
+#        stdscr.clear()
         if ypos in {0, height - 1}:
             ydir *= -1
         if xpos in {0, width - 1}:
