@@ -1,13 +1,10 @@
 import curses
 
 def colors(stdscr):
-    i = 0
-    for name in dir(curses):
-        if name.startswith("COLOR"):
-            stdscr.addstr(i, 0, "%s " % name)
-            stdscr.addstr("({0:04b}): ".format(getattr(curses, name)))
-            stdscr.addstr("Example text", getattr(curses, name))
-            i += 1
+    colors = {getattr(curses, name): name for name in dir(curses) if
+        name.startswith("COLOR_")}
+
+    stdscr.addstr(str(curses.can_change_color()))
 
     stdscr.refresh()
 
