@@ -14,6 +14,7 @@ def display_txt(stdscr):
             continue
         for i in range(height):
             stdscr.addstr(i, 0, c*(width - 1))
+        stdscr.refresh()
 
 def get_ch(stdscr):
     try:
