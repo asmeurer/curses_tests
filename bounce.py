@@ -4,7 +4,7 @@ import random
 def bounce(stdscr):
     curses.curs_set(0)
     height, width = stdscr.getmaxyx()
-    ypos, xpos = random.randrange(0, height - 1), random.randrange(0, width - 1)
+    ypos, xpos = random.randrange(1, height - 2), random.randrange(1, width - 2)
     ydir, xdir = 1, 1
     stdscr.addstr(height//2, width//2, "Type a character")
     stdscr.nodelay(1)
