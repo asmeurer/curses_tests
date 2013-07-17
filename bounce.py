@@ -21,7 +21,7 @@ def bounce(stdscr):
         ypos += ydir
         xpos += xdir
         stdscr.addstr(ypos, xpos, c)
-        curses.delay_output(50)
+#        curses.delay_output(50)
         stdscr.refresh()
 
 
